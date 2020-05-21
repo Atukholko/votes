@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="RegisterTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="actionBarStyle">@style/Widget.AppTheme.ActionBar</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Widget.AppTheme.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <!-- action bar background - without android prefix -->
+        <item name="background">@color/colorPrimary</item>
+        <!-- action bar elevation - without android prefix -->
+        <item name="elevation">4dp</item>
+        <!-- title text color -->
+        <item name="titleTextStyle">@style/myTheme.ActionBar.TitleText</item>
+        <item name="subtitleTextStyle">@style/myTheme.ActionBar.SubtitleText</item>
+    </style>
+    <style name="myTheme.ActionBar.TitleText" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="myTheme.ActionBar.SubtitleText" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="authorization.fragments.LoginPage"
+    android:background="@color/colorPrimary"
+    android:id="@+id/login_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressBarLogin"
+            android:indeterminate="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:orientation="vertical"
+        android:id="@+id/linLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="80sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/authtext"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="21sp"
+            android:layout_gravity="center"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailField"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:text=""
+            app:met_textColor="@color/colorPrimaryDark"
+            app:met_textColorHint="@color/colorPrimaryDarkGray"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_singleLineEllipsis="true"
+            android:layout_marginTop="20dp"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordField"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:text=""
+            app:met_textColor="@color/colorPrimaryDark"
+            app:met_textColorHint="@color/colorPrimaryDarkGray"
+            android:textSize="16sp"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_singleLineEllipsis="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/authButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/auth_button"
+            android:fontFamily="serif-monospace"
+            android:text="Вход"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lineLogin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/authButtons"
+        android:background="@color/colorPrimaryGray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lineLogin"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/swipeTextLogin"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>

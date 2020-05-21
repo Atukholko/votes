@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_votes"
+        android:icon="@drawable/ic_view_all_votes_black_24dp"
+        android:title="Все опросы" />
+
+    <item
+        android:id="@+id/nav_vote_builder"
+        android:icon="@drawable/ic_add_box_black_24dp"
+        android:title="Новый опрос" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        android:title="Профиль" />
+
+</menu>

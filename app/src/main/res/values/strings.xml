@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">votes</string>
+    <string name="authtext">войдите в свою учетную запись</string>
+    <string name="SignInBtn">Войти</string>
+    <string name="RegisterBtn">Регистрация</string>
+    <string name="password">Пароль</string>
+    <string name="email">Эл. адрес: example@gmail.com</string>
+    <string name="name">Имя и фамилия</string>
+    <string name="swipeTextLogin">свайп влево для регистрации</string>
+    <string name="swipeTextRegister">свайп вправо для входа</string>
+</resources>

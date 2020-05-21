@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fffafa</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimaryGray">#d6d6d6</color>
+    <color name="colorPrimaryDarkGray">#9c9c9c</color>
+    <color name="colorAccent">#1689f5</color>
+    <color name="rippleEffect">#69b6ff</color>
+    <color name="builderText">#8f8f8f</color>
+<!--    <color name="builderEditTextBack">#f2f2f2</color> -->
+    <color name="builderEditTextBack">#fffafa</color>
+</resources>

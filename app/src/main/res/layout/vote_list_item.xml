@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/vote_representation"
+    android:clickable="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemOwner"
+                android:text="This is email"
+                android:textSize="14sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_clear_24dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:visibility="gone"
+                android:id="@+id/delete_vote_button"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/itemQuestion"
+            android:text="This is question"
+            android:textSize="20sp"
+            android:textColor="@color/rippleEffect"
+            android:fontFamily="sans-serif" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/answers_list"/>
+    </LinearLayout>
+
+</LinearLayout>
